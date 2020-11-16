@@ -16,17 +16,19 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ManageActivity extends AppCompatActivity {
     TextView amount,cause;
     Button confirmbtn;
-   /* FirebaseDatabase database;
+  //edit here
+   FirebaseDatabase database;
     DatabaseReference myRef;
-    private FirebaseAuth mAuth;*/
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage);
-       /* database=FirebaseDatabase.getInstance();
-        myRef=database.getReference("users");*/
-        //mAuth = FirebaseAuth.getInstance();
+        //edit here
+       database=FirebaseDatabase.getInstance();
+        myRef=database.getReference("users");
+        mAuth = FirebaseAuth.getInstance();
 
         amount=findViewById(R.id.amount);
         cause=findViewById(R.id.cause);
@@ -42,22 +44,22 @@ public class ManageActivity extends AppCompatActivity {
                 else if (amountInput.isEmpty())
                 {
                     Toast.makeText(ManageActivity.this,"Enter the amount spent",Toast.LENGTH_LONG).show();
-                }
-                /*else
+                }//comment getup
+                else
                     {
                         getUp(causeInput,amountInput);
-                    }*/
+                    }
             }
         });
     }
-    /*void getUp(final String causeInput,String amountInput)
+    void getUp(final String causeInput,String amountInput)
     {
         ProfileModel profileModel= new ProfileModel(amountInput,causeInput);
-        myRef.child(mAuth.getUid()).setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+        myRef.child(mAuth.getUid()).child("amt").setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Toast.makeText(ManageActivity.this,"Updated Successfully!",Toast.LENGTH_LONG).show();
             }
         });
-    }*/
+    }
 }

@@ -1,6 +1,6 @@
 package com.example.expenditureanalyser;
 
-/*public class ProfileModel {
+public class ProfileModel {
     String amount,cause;
 
     public ProfileModel(String amount, String cause) {
@@ -26,4 +26,4 @@ package com.example.expenditureanalyser;
     public void setCause(String cause) {
         this.cause = cause;
     }
-}*/
+}
