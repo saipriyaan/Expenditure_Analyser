@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "610502732209",
+    "firebase_url": "https://expenditure-analyser-4729c.firebaseio.com",
+    "project_id": "expenditure-analyser-4729c",
+    "storage_bucket": "expenditure-analyser-4729c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610502732209:android:3cc1bf24fb2bb43540f590",
+        "android_client_info": {
+          "package_name": "com.example.expenditureanalyser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610502732209-15orbqfci0ifus8neke4djfbfk9lecjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANq9YW_tXBh2wr_SjOb3yMdsUFgE_fV7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610502732209-15orbqfci0ifus8neke4djfbfk9lecjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
